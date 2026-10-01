@@ -44,7 +44,27 @@ nav a {
     margin: 0 8px;
     font-weight: bold;
 }
+.breaking {
+    background: #111;
+    color: white;
+    padding: 12px;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+}
 
+.breaking {
+    animation: ticker 12s linear infinite;
+}
+
+@keyframes ticker {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
 .hero {
     text-align: center;
     padding: 20px;
